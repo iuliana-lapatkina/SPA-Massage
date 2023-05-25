@@ -1,0 +1,22 @@
+.swiper {
+  &.brands__container {
+    height: 118px;
+  }
+
+  &.services__container {
+    height: 206px;
+  }
+
+  &.price__container {
+    height: 242px;
+  }
+}
+
+.swiper-slide-active,
+.swiper-slide-next {
+  max-width: 240px;
+}
+
+.swiper-pagination {
+  z-index: 3;
+}

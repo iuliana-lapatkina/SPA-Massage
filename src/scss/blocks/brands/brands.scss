@@ -1,0 +1,105 @@
+.brands {
+  position: relative;
+  height: fit-content;
+  border-top: 1px solid #b8ffec;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+
+  &::after {
+    @include transparent-gradient;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include section-title;
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      @include background-title;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      justify-items: stretch;
+      gap: 16px 24px;
+      padding: 24px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px 32px;
+    }
+  }
+
+  &__item-button {
+    @include button-swiper;
+    padding: 16px;
+    min-width: 240px;
+    height: 72px;
+
+    @media screen and (min-width: $tablet) {
+      min-width: 224px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      min-width: 240px;
+    }
+
+    &--apple {
+      padding-top: 12px;
+    }
+
+    &--hp {
+      padding: 10px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: inherit;
+    }
+  }
+
+  &__item {
+    &:nth-child(n + 7) {
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
+
+      @media screen and (min-width: $desktop) {
+        display: block;
+      }
+    }
+
+    &:nth-child(n + 9) {
+      @media screen and (min-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+
+  &__item-button {
+    @media screen and (min-width: $mobile) {
+      min-width: 224px;
+      width: 100%;
+    }
+  }
+}

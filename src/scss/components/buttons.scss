@@ -1,0 +1,146 @@
+.button-show-hide {
+  position: relative;
+  padding: 0 5px 0 29px;
+  width: 224px;
+  width: fit-content;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  background-color: $color-background;
+}
+
+.button-show-hide::before,
+.button-show-hide::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 1px;
+  top: 10px;
+  pointer-events: inherit;
+  background-color: $color-accent-bright;
+  border-radius: 1px 1px;
+}
+
+.button-show-hide::before {
+  transform: rotate(45deg);
+  left: 12.5px;
+  box-shadow: 3px 3px $color-accent-bright;
+}
+
+.button-show-hide::after {
+  transform: rotate(-45deg);
+  left: 10px;
+  box-shadow: -3px 3px $color-accent-bright;
+}
+
+.button-show::before {
+  transform: rotate(45deg);
+  left: 10px;
+  box-shadow: 3px 3px $color-accent-bright;
+}
+
+.button-show::after {
+  transform: rotate(-45deg);
+  left: 12.5px;
+  box-shadow: -3px 3px $color-accent-bright;
+}
+
+.button-arrow {
+  position: relative;
+
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    pointer-events: inherit;
+    background: inherit;
+    border: 2px solid $color-button;
+    border-radius: 50%;
+  }
+
+  &.brands__item-button::before {
+    top: 16px;
+  }
+
+  &.services__item-button::before {
+    bottom: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 8.5px;
+    height: 8.5px;
+    right: 33.5px;
+    pointer-events: inherit;
+    background: inherit;
+    border-top: 2px solid $color-button;
+    border-right: 2px solid $color-button;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &.brands__item-button::after {
+    top: 30.5px;
+  }
+
+  &.services__item-button::after {
+    bottom: 30.5px;
+  }
+}
+
+.button-animation {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.button-animation:hover,
+.button-animation:focus,
+.button-animation:active {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.pagination__contacts-image {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.pagination__contacts-button:hover > .pagination__contacts-image {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.button-close {
+  position: relative;
+  margin-right: 16px;
+  background-color: $color-button;
+  border: 1px solid $color-button;
+  border-radius: 50%;
+}
+
+.button-close::before,
+.button-close::after {
+  position: absolute;
+  content: '';
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 22px;
+  height: 2.2px;
+  border-radius: 2px;
+  background-color: $color-light;
+}
+
+.button-close::before {
+  transform: rotate(45deg);
+}
+
+.button-close::after {
+  transform: rotate(-45deg);
+}

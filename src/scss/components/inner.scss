@@ -1,0 +1,18 @@
+.inner {
+  padding: 0 0 0 16px;
+  margin: 0 auto;
+  max-width: 1120px;
+
+  @media (min-width: $tablet) {
+    padding: 0 24px;
+  }
+}
+
+.inner-body {
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @media (min-width: 1120px) {
+    display: flex;
+  }
+}

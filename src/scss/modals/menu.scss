@@ -1,0 +1,143 @@
+.menu {
+  display: none;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 5;
+  background-color: $color-light;
+
+  @media screen and (min-width: $desktop) {
+    display: inherit;
+  }
+
+  &__header {
+    display: flex;
+    align-content: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__button-close {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__button-search {
+    margin-left: auto;
+  }
+
+  &__logo {
+    transition: transform 0.5s ease-in-out;
+
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__list {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 268px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: $color-secondary;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 4px;
+      height: 32px;
+      border-radius: 0 4px 4px 0;
+      background-color: transparent;
+      margin: -4px 12px auto -1 * ($mobile-main);
+
+      @media screen and (min-width: $desktop) {
+        margin-left: -22px;
+      }
+    }
+  }
+
+  &__item:hover::before,
+  &__item:focus::before,
+  &__item:active::before {
+    background-color: #41f6d7;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-right: $mobile-main;
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  &__mail:hover,
+  &__mail:focus,
+  &__mail:active,
+  &__phone:hover,
+  &__phone:focus,
+  &__phone:active {
+    cursor: pointer;
+    color: $color-secondary;
+  }
+
+  &__lang {
+    display: flex;
+    appearance: none;
+  }
+
+  &__lang-button {
+    text-transform: uppercase;
+    cursor: pointer;
+
+    & label {
+      cursor: pointer;
+    }
+
+    & label:hover {
+      color: $color-secondary;
+    }
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__lang-input[type='radio']:checked + label {
+    color: $color-secondary;
+  }
+}

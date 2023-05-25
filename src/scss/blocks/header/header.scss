@@ -1,0 +1,71 @@
+.header {
+  border-bottom: 1px solid #d9fff5;
+  background-color: $color-light;
+
+  &__menu-button {
+    margin-right: 16px;
+  }
+
+  &__logo-image {
+    width: 96px;
+  }
+
+  &__logo-link {
+    display: inherit;
+
+    &:active,
+    &:hover {
+      display: inherit;
+    }
+
+    &::before {
+      content: '';
+      display: none;
+      width: 2px;
+      height: 32px;
+      border-radius: 2px;
+      background: #eaeaea;
+      margin: auto 20px auto 4px;
+
+      @media (min-width: $tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  &__contacts-button {
+    margin-left: 16px;
+  }
+
+  &__contacts-item {
+    display: flex;
+
+    &--call,
+    &--message,
+    &--authorization {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: inherit;
+      }
+    }
+  }
+
+  &--order {
+    &::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 32px;
+      border-radius: 2px;
+      background: #eaeaea;
+      margin: auto 4px auto 20px;
+    }
+  }
+}

@@ -10,21 +10,16 @@ if (document.documentElement.clientWidth < 768) {
   swiperCreate()
 }
 
-showHideElements(
-  '.services__button',
-  '.services__item',
-  'Показать все',
-  'Скрыть'
-)
+// showHideElements(
+//   '.services__button',
+//   '.services__item',
+//   'Показать все',
+//   'Скрыть'
+// )
 
 showHideElements('.brands__button', '.brands__item', 'Показать все', 'Скрыть')
 
-showHideElements(
-  '.about__button',
-  '.about__text-item',
-  'Читать далее',
-  'Скрыть'
-)
+showHideElements('.about__button', '.about__text-item', 'Читать далее', 'Скрыть')
 
 const feedback = document.querySelector('.feedback')
 const feedbackContainer = document.querySelector('.feedback-container')
@@ -59,11 +54,5 @@ hideModalEsc(feedback, feedbackOverlay)
 hideModalEsc(call, callOverlay)
 
 closeClickBlur(menu, menuContainer, menuOverlay, openMenu, openMenu)
-closeClickBlur(
-  feedback,
-  feedbackContainer,
-  feedbackOverlay,
-  openMessageMenu,
-  openMessageHeader
-)
+closeClickBlur(feedback, feedbackContainer, feedbackOverlay, openMessageMenu, openMessageHeader)
 closeClickBlur(call, callContainer, callOverlay, openCallMenu, openCallHeader)

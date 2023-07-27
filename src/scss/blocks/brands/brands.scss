@@ -1,7 +1,7 @@
 .brands {
   position: relative;
   height: fit-content;
-  border-top: 1px solid #b8ffec;
+  border-top: 1px solid $color-green-light;
   margin-bottom: 8px;
 
   @media screen and (min-width: $tablet) {
@@ -24,6 +24,7 @@
     @include section-title;
     position: relative;
     margin-bottom: 24px;
+    padding-bottom: -16px;
 
     &::before {
       @include background-title;
@@ -36,29 +37,28 @@
       grid-template-columns: repeat(3, 1fr);
       justify-content: space-between;
       justify-items: stretch;
-      gap: 16px 24px;
-      padding: 24px 0;
+      gap: 16px 16px;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
     }
 
     @media screen and (min-width: $desktop) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px 32px;
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 
   &__item-button {
     @include button-swiper;
-    padding: 16px;
-    min-width: 240px;
-    height: 72px;
+    height: 200px;
+    border: none;
 
     @media screen and (min-width: $tablet) {
-      min-width: 224px;
+      min-width: 200px;
       width: 100%;
-    }
-
-    @media screen and (min-width: $desktop) {
-      min-width: 240px;
+      height: fit-content;
     }
 
     &--apple {
@@ -79,8 +79,18 @@
   }
 
   &__item {
-    &:nth-child(n + 7) {
+    &:nth-child(n + 4) {
       @media screen and (min-width: $tablet) {
+        display: none;
+      }
+
+      @media screen and (min-width: 1000px) {
+        display: block;
+      }
+    }
+
+    &:nth-child(n + 5) {
+      @media screen and (min-width: 1000px) {
         display: none;
       }
 
@@ -89,17 +99,22 @@
       }
     }
 
-    &:nth-child(n + 9) {
+    &:nth-child(n + 6) {
       @media screen and (min-width: $desktop) {
         display: none;
       }
     }
+
+    &__item-button {
+      @media screen and (min-width: $mobile) {
+        min-width: 224px;
+        width: 100%;
+      }
+    }
   }
 
-  &__item-button {
-    @media screen and (min-width: $mobile) {
-      min-width: 224px;
-      width: 100%;
-    }
+  .brands__item-image {
+    height: 200px;
+    width: 210px;
   }
 }

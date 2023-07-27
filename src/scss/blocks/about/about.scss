@@ -1,5 +1,22 @@
 .about {
   margin-bottom: 24px;
+  height: 450px;
+  background: url('/src/img/img-about/bg-about-34.jpg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(to right, $color-background 13%, transparent 18%, transparent 37%, $color-background 47%, $color-background 49%, transparent 53%, transparent 82%, $color-background 87%), url('/src/img/img-about/bg-about-3.jpg');
+    background-position: 0 0;
+    background-size: 50vw 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet) {
     margin-bottom: 32px;
@@ -84,4 +101,8 @@
 .about__text ~ .about__button:not(.button-show) {
   display: block;
   margin-top: 16px;
+}
+
+.about__text-items {
+  flex-basis: 100%;
 }

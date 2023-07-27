@@ -6,10 +6,6 @@
   z-index: 5;
   background-color: $color-light;
 
-  @media screen and (min-width: $desktop) {
-    display: inherit;
-  }
-
   &__header {
     display: flex;
     align-content: center;

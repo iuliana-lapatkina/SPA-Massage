@@ -54,16 +54,20 @@
 
 .header-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  padding: 18px 16px 18px 0;
+  padding: 24px 16px 24px 0;
 
   @media (min-width: $tablet) {
+    justify-content: space-between;
+    flex-direction: row;
     padding-right: 0;
   }
 
-  @media (min-width: $desktop) {
-    display: none;
-  }
+  // @media (min-width: $desktop) {
+  //   display: none;
+  // }
 }
 
 .pagination-wrapper {
@@ -74,7 +78,8 @@
 
 .about-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  // flex-direction: column;
   gap: 16px;
 
   @media (min-width: $tablet) {

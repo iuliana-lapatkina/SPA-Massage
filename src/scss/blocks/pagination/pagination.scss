@@ -1,16 +1,17 @@
 .pagination {
   position: relative;
-  padding: 24px 0 10px 0;
+  padding: 10px 0 10px 0;
 
   @media (min-width: $desktop) {
-    padding: 40px 0 16px 0;
+    padding: 20px 0 20px 0;
   }
 
   &__title {
     position: relative;
+    color: $color-green;
     margin-bottom: 24px;
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 40px;
     letter-spacing: -0.6px;
     z-index: 3;
@@ -53,6 +54,7 @@
     display: flex;
     flex-basis: 100%;
     overflow: scroll;
+    margin-bottom: -14px;
 
     &::after {
       @include transparent-gradient;
@@ -76,7 +78,7 @@
   }
 
   &__item {
-    color: $color-secondary;
+    color: $color-green;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -86,9 +88,13 @@
     &:hover,
     &:focus,
     &:active {
-      border: 2px solid $color-accent;
+      border: 2px solid $color-rose;
       border-radius: 6px;
       background-color: $color-light;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
     }
   }
 }

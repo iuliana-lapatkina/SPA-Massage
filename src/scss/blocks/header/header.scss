@@ -1,35 +1,24 @@
 .header {
   border-bottom: 1px solid #d9fff5;
-  background-color: $color-light;
+  background-color: rgb(36, 56, 55);
 
   &__menu-button {
-    margin-right: 16px;
+    background-color: rgb(36, 56, 55);
+    margin-right: 30px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 
   &__logo-image {
     width: 96px;
-  }
+    margin-right: 30px;
+    margin-left: 30px;
 
-  &__logo-link {
-    display: inherit;
-
-    &:active,
-    &:hover {
+    @media (min-width: $tablet) {
+      margin-right: 30px;
       display: inherit;
-    }
-
-    &::before {
-      content: '';
-      display: none;
-      width: 2px;
-      height: 32px;
-      border-radius: 2px;
-      background: #eaeaea;
-      margin: auto 20px auto 4px;
-
-      @media (min-width: $tablet) {
-        display: block;
-      }
     }
   }
 
@@ -67,5 +56,67 @@
       background: #eaeaea;
       margin: auto 4px auto 20px;
     }
+  }
+}
+
+.header__contacts-button--authorization {
+  width: 186px;
+  color: $color-green;
+  background-color: $color-rose;
+  font-weight: 700;
+  font-size: 17px;
+  border: 1px solid $color-light;
+  border-radius: 20px;
+
+  @media (min-width: $desktop) {
+    width: 200px;
+  }
+}
+
+.titletitle {
+  margin-bottom: 16px;
+}
+
+.titletitle h1 {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+  }
+}
+
+.titletitle h2 {
+  font-size: 17px;
+  color: $color-rose;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media (min-width: $tablet) {
+    font-size: 13px;
+  }
+}
+
+.newp {
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+
+  @media (min-width: $tablet) {
+    text-align: end;
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: end;
+    font-size: 20px;
+  }
+}
+
+.newdiv {
+  @media (min-width: $desktop) {
+    margin-left: auto;
   }
 }

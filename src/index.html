@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CPS</title>
+    <title>Точка прикосновения</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
 
@@ -18,35 +21,31 @@
               <button class="button menu__button button-close menu__button-close button-animation" aria-label="Закрыть меню"></button>
 
               <a href="#" class="menu__logo">
-                <img src="img/img-header/logo.svg" class="header__logo-image" alt="CPS" lang="en" />
+                <img src="img/img-header/logo1.svg" class="header__logo-image" alt="Лого" />
               </a>
-
-              <button class="button menu__button menu__button-search button-animation" aria-label="Поиск">
-                <img class="menu__image-search" src="img/img-contacts/contacts-search.svg" />
-              </button>
             </header>
 
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Ремонт техники</a>
+                <a href="#" class="menu__link">О нас</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Услуги и сервисы</a>
+                <a href="#" class="menu__link">Акции</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Корпоративным клиентам</a>
+                <a href="#" class="menu__link">Виды массажа</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Продавцам техники</a>
+                <a href="#" class="menu__link">Цены</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Партнерам</a>
+                <a href="#" class="menu__link">Абонементы</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Производителям</a>
+                <a href="#" class="menu__link">Подарочные сертификаты</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Наши сервисные центры</a>
+                <a href="#" class="menu__link">Статьи</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Контакты</a>
@@ -144,41 +143,39 @@
         <header class="header">
           <div class="inner">
             <div class="header-wrapper">
-              <button class="button header__menu-button button-animation" aria-label="Открыть меню">
+              <!-- <button class="button header__menu-button button-animation" aria-label="Открыть меню">
                 <img class="header__menu-image" src="img/img-menu/menu_button.svg" />
-              </button>
+              </button> -->
 
               <a href="#" class="header__logo-link">
-                <img src="img/img-header/logo.svg" class="header__logo-image" alt="CPS" />
+                <img src="img/img-header/logo-flower-2.svg" class="header__logo-image" alt="Лого" />
               </a>
 
-              <ul class="header__contacts">
-                <li class="header__contacts-item header__contacts-item--call">
-                  <button class="button header__contacts-button header__button-call button-animation" aria-label="Позвонить нам">
-                    <img class="header__contacts-image" src="img/img-contacts/contacts-call.svg" />
-                  </button>
-                </li>
-                <li class="header__contacts-item header__contacts-item--message">
-                  <button class="button header__contacts-button button-message header__button-message button-animation" aria-label="Написать нам">
-                    <img class="header__contacts-image" src="img/img-contacts/contacts-message.svg" />
-                  </button>
-                </li>
-                <li class="header__contacts-item header__contacts-item--authorization">
-                  <button class="button header__contacts-button button-animation" aria-label="Авторизоваться">
-                    <img class="header__contacts-image" src="img/img-contacts/contacts-authorization.svg" />
-                  </button>
-                </li>
-                <li class="header__contacts-item header__contacts-item--order">
-                  <button class="button header__contacts-button button-animation" aria-label="Оставить заявку">
-                    <img class="header__contacts-image" src="img/img-contacts/contacts-order.svg" />
-                  </button>
-                </li>
-                <li class="header__contacts-item header__contacts-item--status">
-                  <button class="button header__contacts-button button-animation" aria-label="Статус ремонта">
-                    <img class="header__contacts-image" src="img/img-contacts/contacts-status.svg" />
-                  </button>
-                </li>
-              </ul>
+              <div class="titletitle">
+                <h1>Точка прикосновения</h1>
+                <h2>SPA & Massage</h2>
+              </div>
+
+              <div class="newdiv">
+                <p class="newp"> Санкт-Петербург, м. Старая Деревня </p>
+                <ul class="header__contacts">
+                  <li class="header__contacts-item header__contacts-item--call">
+                    <button class="button header__contacts-button header__button-call button-animation" aria-label="Позвонить нам">
+                      <img class="header__contacts-image" src="img/img-contacts/contacts-call.svg" />
+                    </button>
+                  </li>
+                  <li class="header__contacts-item header__contacts-item--message">
+                    <button class="button header__contacts-button button-message header__button-message button-animation" aria-label="Написать нам">
+                      <img class="header__contacts-image" src="img/img-contacts/contacts-message.svg" />
+                    </button>
+                  </li>
+                  <li class="header__contacts-item header__contacts-item--authorization">
+                    <button class="button-long header__contacts-button header__contacts-button--authorization button-animation" aria-label="Записаться на массаж">
+                      <a href="https://dikidi.net/1109928?p=0.pi">Записаться онлайн</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </header>
@@ -187,36 +184,30 @@
           <nav class="pagination">
             <div class="inner inner-pagination">
               <div class="pagination-wrapper">
-                <h1 class="pagination__title">Услуги и сервисы</h1>
-                <ul class="pagination__contacts">
-                  <li class="pagination__contacts-item pagination__contacts-item--order">
-                    <button class="button pagination__contacts-button">
-                      <span class="pagination__contacts-text">Оставить заявку</span>
-                      <img class="pagination__contacts-image" src="img/img-contacts/contacts-order.svg" />
-                    </button>
-                  </li>
-                  <li class="pagination__contacts-item header__contacts-item--status">
-                    <button class="button pagination__contacts-button">
-                      <span class="pagination__contacts-text">Статус ремонта</span>
-                      <img class="pagination__contacts-image" src="img/img-contacts/contacts-status.svg" />
-                    </button>
-                  </li>
-                </ul>
                 <ul class="pagination__list">
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">Ремонтируемые бренды</a>
+                    <a href="#" class="pagination__link">О нас</a>
                   </li>
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">Дополнительные услуги</a>
+                    <a href="#" class="pagination__link">Акции</a>
                   </li>
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">Цены на услуги</a>
+                    <a href="#" class="pagination__link">Цены</a>
                   </li>
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">Адреса сервисных центров</a>
+                    <a href="#" class="pagination__link">Виды массажа</a>
                   </li>
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">Специальные цены</a>
+                    <a href="#" class="pagination__link">Абонементы</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">Подарочные сертификаты</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">Статьи</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -227,81 +218,50 @@
             <div class="inner">
               <div class="about-wrapper">
                 <h2 class="about__title">О нас</h2>
-                <div class="about__content">
-                  <p class="about__text"
-                    ><span class="about__text-item">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</span>
-                    <span class="about__text-item about__text-item--tablet"> Мы успешно работаем c 1992 года и заслужили репутацию надежного партнера</span
-                    ><span class="about__text-item about__text-item--desktop">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-
-                    <span class="about__text-item about__text-item--desktop"> Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </span></p
-                  >
-
-                  <button class="button about__button button-show-hide button-show">Читать далее</button>
-                </div>
-                <img src="img/img-about/about_img.jpg" alt="Табличка с логотипом компании CPS." class="about__image" />
+                <!-- <img src="img/img-about/about_photo.jpg" alt="Массаж лица" class="about__image" /> -->
               </div>
             </div>
           </section>
 
           <section class="brands">
             <div class="inner inner-brands">
-              <h2 class="brands__title">Ремонт техники различных брендов</h2>
+              <h2 class="brands__title">Акции</h2>
 
               <div class="brands__container swiper-brands">
                 <div class="brands__list">
                   <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_lenovo.svg" alt="Lenovo" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action_birthday.jpg" alt="20% скидка в честь Дня Рождения" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_samsung.svg" alt="Samsung" class="brands__item-image" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-profession.jpg" alt="10% за вашу профессию" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button brands__item-button--apple button-arrow">
-                      <img src="img/img-brands/brands_apple.svg" alt="Apple" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-students.jpg" alt="20% скидка для пенсионеров и студентов" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_viewsonic.svg" alt="ViewSonic" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-otziv.jpg" alt="Подарок за отзыв" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_bosch.svg" alt="Bosch" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-abonement.jpg" alt="Абонемент на поддержание результата" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button brands__item-button--hp button-arrow">
-                      <img src="img/img-brands/brands_hp.svg" alt="HP" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-happy-hours.jpg" alt="Счастливые часы" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                   <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_acer.svg" alt="Acer" class="brands__item-image" lang="en" />
-                    </button>
-                  </div>
-                  <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_sony.svg" alt="Sony" class="brands__item-image" lang="en" />
-                    </button>
-                  </div>
-                  <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_lenovo.svg" alt="Lenovo" class="brands__item-image" lang="en" />
-                    </button>
-                  </div>
-                  <div class="brands__item">
-                    <button class="button brands__item-button button-arrow">
-                      <img src="img/img-brands/brands_samsung.svg" alt="Samsung" class="brands__item-image" />
-                    </button>
-                  </div>
-                  <div class="brands__item">
-                    <button class="button brands__item-button brands__item-button--apple button-arrow">
-                      <img src="img/img-brands/brands_apple.svg" alt="Apple" class="brands__item-image" lang="en" />
+                    <button class="button brands__item-button">
+                      <img src="img/img-actions/action-friend.jpg" alt="Знакомство с мастером и приведи друга" class="brands__item-image" lang="ru" />
                     </button>
                   </div>
                 </div>
@@ -311,7 +271,7 @@
             </div>
           </section>
 
-          <section class="services">
+          <!-- <section class="services">
             <div class="inner inner-services">
               <h2 class="services__title">Ремонт различных видов техники</h2>
 
@@ -337,9 +297,9 @@
               <div class="swiper-pagination swiper-pagination-services"></div>
               <button class="button button-show-hide button-show services__button"> Показать все </button>
             </div>
-          </section>
+          </section> -->
 
-          <section class="price">
+          <!-- <section class="price">
             <div class="inner inner-price">
               <h2 class="price__title">Цены на услуги</h2>
               <div class="price__table-wrap">
@@ -390,14 +350,17 @@
               <p class="price__text"> Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку. </p>
               <a class="price__link" href="#">Получить коммерческое предложение</a>
             </div>
-          </section>
+          </section> -->
         </main>
 
         <footer class="footer">
           <div class="inner inner-footer">
             <div class="footer-wrapper">
-              <p class="footer__text">© 2019 CPS Разработано командой Apesong </p>
-              <p class="footer__text">Политика конфиденциальности</p>
+              <p class="footer__text">© 2023 Разработано командой Iulap</p>
+              <p class="footer__text"
+                ><a href="https://ru.freepik.com/free-photo/beautiful-young-woman-having-spa-massage-of-the-head-in-beauty-salon-indoors_10875396.htm#query=face%20massage&position=11&from_view=keyword&track=ais">Изображение от valuavitaly</a> на
+                Freepik</p
+              >
               <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
             </div>
           </div>

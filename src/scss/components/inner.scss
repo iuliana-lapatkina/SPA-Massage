@@ -1,7 +1,7 @@
 .inner {
   padding: 0 0 0 16px;
-  margin: 0 auto;
-  max-width: 1120px;
+  margin: auto auto;
+  max-width: 1380px;
 
   @media (min-width: $tablet) {
     padding: 0 24px;
@@ -10,9 +10,10 @@
 
 .inner-body {
   max-width: $desktop;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media (min-width: 1120px) {
-    display: flex;
-  }
+  // @media (min-width: 1120px) {
+  //   display: flex;
+  // }
 }
